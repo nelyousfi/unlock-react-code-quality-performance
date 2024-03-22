@@ -1,0 +1,4 @@
+- [ ] A state component is the main cause of re-rendering in a React application.
+- [ ] If a component re-renders, all its children re-render as well (unless they are memoized).
+- [ ] Be careful when using state with custom hooks.
+- [ ] Moving state down the component tree can help to reduce the number of re-renders.

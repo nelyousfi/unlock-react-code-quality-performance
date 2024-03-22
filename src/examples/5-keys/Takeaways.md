@@ -1,0 +1,1 @@
+- [ ] If two components have the same name and position, react will consider them the same and won't unmount the old one. This is why it's important to give each component a unique key.

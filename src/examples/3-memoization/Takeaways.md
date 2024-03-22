@@ -1,0 +1,3 @@
+- [ ] React compares functions/objects/arrays per reference, not per value.
+- [ ] We have to memoize functions/objects/arrays before passing them to a React memo component.
+- [ ] It is possible to pass a custom comparison function to React.memo (I really don't recommend it, as it can easily lead to bugs).

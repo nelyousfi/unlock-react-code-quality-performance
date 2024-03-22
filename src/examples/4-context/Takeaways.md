@@ -1,0 +1,4 @@
+- [ ] Context is not only to avoid prop drilling, but also to avoid unnecessary re-renders.
+- [ ] Context shines with the patterns we discussed before (children, passing state down, etc).
+- [ ] Context is not a state management solution.
+- [ ] As Context is mostly used on the top level of the component tree, it should be used with caution.

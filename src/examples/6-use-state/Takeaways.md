@@ -1,0 +1,1 @@
+- [ ] useState can take a function as an argument to set the initial state. This function will be called only once before the component is rendered for the first time.

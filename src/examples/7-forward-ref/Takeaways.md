@@ -1,0 +1,1 @@
+- [ ] forwardRef is not only for imperative manipulation of the DOM, it can also be used to improve the performance of your components.
