@@ -1,3 +1,4 @@
+- [ ] UI = f(state) -> reactivity.
 - [ ] A state component is the main cause of re-rendering in a React application.
 - [ ] If a component re-renders, all its children re-render as well (unless they are memoized).
 - [ ] Be careful when using state with custom hooks.

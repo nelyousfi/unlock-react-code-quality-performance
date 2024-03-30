@@ -9,8 +9,8 @@ import { Problem, Solution } from "./examples/1-states";
 const App = () => {
   return (
     <>
-      {/* <Problem /> */}
-      <Solution />
+      <Problem />
+      {/* <Solution /> */}
     </>
   );
 };
