@@ -4,7 +4,6 @@ let value;
 
 export default () => {
   useEffect(() => {
-    // this called after the first render
     value = "Hello, World!";
   }, []);
 

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { HeavyComponent } from "../../components/HeavyComponent";
 
 const ShowCount = ({ count }) => {
@@ -10,8 +10,8 @@ export default () => {
 
   return (
     <>
-      <HeavyComponent />
       <button onClick={() => setCount(count + 1)}>{count}</button>
+      <HeavyComponent />
       <ShowCount count={count} />
     </>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { HeavyComponent } from "../../components/HeavyComponent";
 
 const ShowCount = ({ count }) => {

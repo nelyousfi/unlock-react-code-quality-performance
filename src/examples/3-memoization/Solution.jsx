@@ -1,32 +1,34 @@
-import React, { useEffect, useMemo, useState } from "react";
+import { memo, useMemo, useState } from "react";
 import { HeavyComponent } from "../../components/HeavyComponent";
 
-const Child = ({ a }) => {
-  useEffect(() => {
-    console.log("oops", a);
-  }, [a]);
-
-  return null;
+const ShowCount = ({ count }) => {
+  return <p>Count: {count}</p>;
 };
 
 export default () => {
   const [count, setCount] = useState(0);
 
-  const a = useMemo(() => {}, []);
+  const countGreaterThanZero = count > 0;
+
+  const data = useMemo(
+    () => ({ countGreaterThanZero }),
+    [countGreaterThanZero]
+  );
 
   return (
     <>
       <button onClick={() => setCount(count + 1)}>{count}</button>
-      <Child a={a} />
-      <HeavyMemoizedComponent a={a} />
+      <HeavyMemoizedComponent data={data} />
+      <ShowCount count={count} />
     </>
   );
 };
 
-const HeavyMemoizedComponent = React.memo(({ a }) => {
-  useEffect(() => {
-    console.log("HeavyMemoizedComponent", a);
-  }, [a]);
-
-  return <HeavyComponent />;
+const HeavyMemoizedComponent = memo(({ data }) => {
+  return (
+    <>
+      {data.countGreaterThanZero && <p>Count is greater than zero</p>}
+      <HeavyComponent />
+    </>
+  );
 });

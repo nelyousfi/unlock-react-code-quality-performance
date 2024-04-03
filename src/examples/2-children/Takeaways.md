@@ -1,3 +1,2 @@
 - [ ] When passing children from a parent component, the children will not re-render when the parent component re-renders.
 - [ ] The `children` is just a syntax sugar for passing children as a prop.
-- memoization
